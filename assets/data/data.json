@@ -1,0 +1,16 @@
+{
+	"name": "Developer",
+	"people": [{
+		"name": "Luke",
+		"age": 28
+	}, {
+		"name": "Dart Vaider",
+		"age": 57
+	}, {
+		"name": "Sonia",
+		"age": 16
+	}, {
+		"name": "Fania",
+		"age": 0.7
+	}]
+}
