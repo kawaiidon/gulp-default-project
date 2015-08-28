@@ -20,6 +20,7 @@ gulp.task('default', [
 	'copyAssets',
 	'browser-sync',
 	'handlebars',
+    'imagemin',
 	'jsConcat',
 	'less',
 	'watch'
@@ -30,6 +31,7 @@ gulp.task('default', [
 gulp.task('build', [
 	'copyAssets',
 	'handlebars',
+    'imagemin',
 	'jsConcat',
 	'less'
 ]);
@@ -105,6 +107,7 @@ gulp.task('browser-sync', function () {
 gulp.task('watch', function () {
 	gulp.watch('assets/less/*.less', ['less']);
 	gulp.watch('assets/js/**/*.js', ['jsConcat']);
+    gulp.watch('assets/img/**/*.*', ['imagemin']);
 	gulp.watch('assets/templates/**/*.handlebars', ['handlebars']);
 });
 
